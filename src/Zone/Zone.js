@@ -5,11 +5,11 @@ import { slotShape } from '../Slot/Slot';
 
 import './Zone.css';
 
-export function Zone({ slots }) {
+export function Zone({ zone }) {
   return (
     <section className="zone">
       <ul className="slots">
-        {slots.map((slot) => (
+        {zone.map((slot) => (
           <Slot slot={slot} />
         ))}
       </ul>

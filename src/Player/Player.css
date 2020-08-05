@@ -1,0 +1,10 @@
+.player {
+  background-color: var(--player-bg);
+  color: var(--player-color);
+  text-align: center;
+}
+
+.player-field {
+  font-size: 36px;
+  font-weight: 700;
+}
