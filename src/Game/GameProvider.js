@@ -41,7 +41,8 @@ const initialState = {
 };
 
 export function GameProvider({ children }) {
-  const [state, dispatch] = useImmerReducer(initialState);
+  const [state, dispatch] = useImmerReducer((draft, action) => {},
+  initialState);
 
   return <GameContext.Provider value={state}>{children}</GameContext.Provider>;
 }

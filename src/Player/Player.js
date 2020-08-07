@@ -1,6 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faUser,
+  faLayerGroup,
+  faClock,
+} from '@fortawesome/free-solid-svg-icons';
 
 import PlayerModel from './Player.model';
 
@@ -12,15 +17,15 @@ export function Player({ player }) {
   return (
     <section className="player">
       <div className="player-field">
-        <FontAwesomeIcon icon="user" />
+        <FontAwesomeIcon icon={faUser} />
         <span>{name}</span>
       </div>
       <div className="player-field">
-        <FontAwesomeIcon icon="layerGroup" />
+        <FontAwesomeIcon icon={faLayerGroup} />
         <span>{deckSize}</span>
       </div>
       <div className="player-field">
-        <FontAwesomeIcon icon="clock" />
+        <FontAwesomeIcon icon={faClock} />
         <span>{turnTimer}</span>
       </div>
     </section>

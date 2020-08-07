@@ -1,5 +1,3 @@
-import { Player } from './Player';
-
 export default class Player {
   constructor(id, name, champion, deckSize, turnTimer) {
     this.id = id;

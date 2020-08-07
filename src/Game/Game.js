@@ -1,9 +1,10 @@
 import React from 'react';
 
 import { Board } from '../Board/Board';
+import { Player } from '../Player/Player';
+import { useGame } from './GameProvider';
 
 import './Game.css';
-import { Player } from '../Player/Player';
 
 export function Game() {
   const game = useGame();

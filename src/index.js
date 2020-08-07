@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Game from './Game/Game';
+import { Game } from './Game/Game';
 
 import './index.css';
 import { GameProvider } from './Game/GameProvider';
