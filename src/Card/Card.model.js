@@ -1,5 +1,6 @@
 export default class Card {
   constructor(
+    id,
     name,
     cost,
     imageSrc,
@@ -8,6 +9,7 @@ export default class Card {
     attack = null,
     health = null
   ) {
+    this.id = id;
     this.name = name;
     this.cost = cost;
     this.imageSrc = imageSrc;

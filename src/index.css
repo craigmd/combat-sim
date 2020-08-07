@@ -1,0 +1,20 @@
+:root {
+  --player-bg: #000;
+  --player-color: #fff;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+}

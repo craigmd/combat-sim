@@ -1,0 +1,20 @@
+.player {
+  background-color: var(--player-bg);
+  color: var(--player-color);
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+.player-field {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.player-field svg {
+  margin-right: 8px;
+}
+
+.player-field:not(:last-child) {
+  margin-right: 36px;
+}

@@ -1,5 +1,10 @@
 .zone {
+  border: 1px solid blue;
+  flex: 1;
 }
 
 .slots {
+  display: flex;
+  height: 100%;
+  list-style: none;
 }
