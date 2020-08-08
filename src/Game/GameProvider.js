@@ -3,12 +3,16 @@ import { useImmerReducer } from 'use-immer';
 
 import Player from '../Player/Player.model';
 import Slot from '../Slot/Slot.model';
+import cards from '../cards';
 
 export const GameContext = React.createContext(null);
 
+const deckOne = Array.from({ length: 30 }, () => cards.testCard);
+const deckTwo = Array.from({ length: 30 }, () => cards.testCard);
+
 const initialState = {
-  playerOne: new Player('1', 'Player 1', undefined, 30, 5000),
-  playerTwo: new Player('2', 'Player 2', undefined, 30, 5000),
+  playerOne: new Player('1', 'Player 1', undefined, deckOne, 5000),
+  playerTwo: new Player('2', 'Player 2', undefined, deckTwo, 5000),
   board: [
     [
       new Slot('15'),
@@ -29,13 +33,13 @@ const initialState = {
       new Slot('14'),
     ],
     [
-      new Slot('1'),
-      new Slot('2'),
-      new Slot('3'),
+      new Slot('1', deckOne[2]),
+      new Slot('2', deckOne[2]),
+      new Slot('3', deckOne[2]),
       new Slot('4'),
-      new Slot('5'),
-      new Slot('6'),
-      new Slot('7'),
+      new Slot('5', deckOne[2]),
+      new Slot('6', deckOne[2]),
+      new Slot('7', deckOne[2]),
     ],
   ],
 };
