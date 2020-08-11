@@ -1,6 +1,8 @@
 :root {
   --player-bg: #000;
   --player-color: #fff;
+  --robot-card-color: #000;
+  --ability-card-color: #2245c5;
 }
 
 *,

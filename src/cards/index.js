@@ -1,3 +1,4 @@
-import { testCard } from './test';
+import { robotTest } from './robot-test';
+import { abilityTest } from './ability-test';
 
-export default { testCard };
+export default { robotTest, abilityTest };

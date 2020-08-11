@@ -7,8 +7,8 @@ import cards from '../cards';
 
 export const GameContext = React.createContext(null);
 
-const deckOne = Array.from({ length: 30 }, () => cards.testCard);
-const deckTwo = Array.from({ length: 30 }, () => cards.testCard);
+const deckOne = Array.from({ length: 30 }, () => cards.robotTest);
+const deckTwo = Array.from({ length: 30 }, () => cards.abilityTest);
 
 const initialState = {
   playerOne: new Player('1', 'Player 1', undefined, deckOne, 5000),
@@ -37,9 +37,9 @@ const initialState = {
       new Slot('2', deckOne[2]),
       new Slot('3', deckOne[2]),
       new Slot('4'),
-      new Slot('5', deckOne[2]),
-      new Slot('6', deckOne[2]),
-      new Slot('7', deckOne[2]),
+      new Slot('5', deckTwo[2]),
+      new Slot('6', deckTwo[2]),
+      new Slot('7', deckTwo[2]),
     ],
   ],
 };
