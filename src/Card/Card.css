@@ -1,11 +1,27 @@
 .card {
-  border: 1px solid #000;
   border-radius: 2px;
+}
+
+.card.robot {
+  border: 1px solid var(--robot-card-color);
+}
+
+.card.ability {
+  border: 1px solid var(--ability-card-color);
+}
+
+.card.robot header,
+.card.robot footer {
+  background-color: var(--robot-card-color);
+}
+
+.card.ability header,
+.card.ability footer {
+  background-color: var(--ability-card-color);
 }
 
 .card header {
   align-items: center;
-  background-color: #000;
   color: #fff;
   display: flex;
   font-size: 12px;
@@ -36,7 +52,6 @@
 
 .card footer {
   align-items: center;
-  background-color: #000;
   color: #fff;
   display: flex;
   font-weight: 700;

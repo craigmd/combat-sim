@@ -1,13 +1,14 @@
 import Card from '../Card/Card.model';
 import testImg from '../assets/card-images/test.jpg';
+import { CARD_TYPES } from './card.constants';
 
-export const testCard = new Card(
+export const robotTest = new Card(
   '1',
-  'Test Card',
+  'Robot',
   '3',
   testImg,
   'Attack the enemy with the least Durability',
-  'robot',
+  CARD_TYPES.ROBOT,
   6,
   7
 );
