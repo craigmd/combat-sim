@@ -1,6 +1,7 @@
 .zone {
-  border: 1px solid blue;
+  border-bottom: 1px solid #000;
   flex: 1;
+  padding: 8px;
 }
 
 .slots {

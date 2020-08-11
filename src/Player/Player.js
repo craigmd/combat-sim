@@ -12,7 +12,7 @@ import PlayerModel from './Player.model';
 import './Player.css';
 
 export function Player({ player }) {
-  const { name, deckSize, turnTimer } = player;
+  const { name, deck, turnTimer } = player;
 
   return (
     <section className="player">
@@ -22,7 +22,7 @@ export function Player({ player }) {
       </div>
       <div className="player-field">
         <FontAwesomeIcon icon={faLayerGroup} />
-        <span>{deckSize}</span>
+        <span>{deck.length}</span>
       </div>
       <div className="player-field">
         <FontAwesomeIcon icon={faClock} />

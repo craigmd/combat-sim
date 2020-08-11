@@ -1,8 +1,50 @@
 .card {
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+
+.card header {
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  height: 8.9%;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.card h3 {
+  font-size: 12px;
+  text-transform: capitalize;
 }
 
 .card-image-container {
+  height: 40%;
+}
+
+.card-image-container img {
+  height: 100%;
 }
 
 .card-text-container {
+  font-size: 12px;
+  height: 40%;
+  padding: 4px;
+}
+
+.card footer {
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  font-weight: 700;
+  height: 11.1%;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.card .stat svg {
+  opacity: 0.5;
 }
