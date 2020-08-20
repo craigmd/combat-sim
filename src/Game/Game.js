@@ -2,18 +2,20 @@ import React from 'react';
 
 import { Board } from '../Board/Board';
 import { Player } from '../Player/Player';
-import { useGame } from './GameProvider';
+import { useBoard } from '../Board/BoardProvider';
+import { usePlayers } from '../Player/PlayersProvider';
 
 import './Game.css';
 
 export function Game() {
-  const game = useGame();
+  const { players } = usePlayers();
+  const { board } = useBoard();
 
   return (
     <main className="game">
-      <Player player={game.playerTwo} />
-      <Board board={game.board} />
-      <Player player={game.playerOne} />
+      <Player player={players.two} />
+      <Board board={board} />
+      <Player player={players.one} />
     </main>
   );
 }
